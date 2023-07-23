@@ -19,6 +19,7 @@ def extract_words(sentences):
     trash_characters = '?.,!:;"$%^&*()#@+/0123456789<>=\\[]_~{}|`'
     trans = string.maketrans(trash_characters, ' '*len(trash_characters))
 
+
     for text in sentences:
         text = re.sub(r'[^\x00-\x7F]+',' ', text)
         text = text.replace('<br />', ' ')
