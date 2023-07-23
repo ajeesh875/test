@@ -1,6 +1,7 @@
 # sentiment-analysis-using-python
 --- Large Data Analysis Course Project ---
 
+
 This folder is a set of simplified python codes which use sklearn package 
 to classify movie reviews.
 
