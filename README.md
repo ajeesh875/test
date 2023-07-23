@@ -26,6 +26,5 @@ python naive.py
 
 
 ![L1_2](https://github.com/changhuixu/sentiment-analysis-using-python/blob/master/svm/svm-demo-screenshot.png "SVM code")
-
 ### End
 last modified 04/16/2016
