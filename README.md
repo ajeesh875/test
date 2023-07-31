@@ -1,30 +1,37 @@
-# sentiment-analysis-using-python
---- Large Data Analysis Course Project ---
+# SharePoint Link Checker and Outlook Email Sender
 
+This Python project provides a solution to check SharePoint links and send the results through an Outlook email. It is implemented using object-oriented programming (OOP) and includes three classes:
 
-This folder is a set of simplified python codes which use sklearn package 
-to classify movie reviews.
+1. `SharePointLinkChecker`: This class checks SharePoint links and extracts URLs from button elements.
 
-Two classifiers were used: Naive Bayes and SVM.
-SVM gives an accuracy of about 87.5%, which is slightly higher than 86% given by Naive Bayes.
+2. `OutlookEmailSender`: This class sends an email via Outlook with the given body.
 
-## usage
-`imdbReviews.py` generates `*.pkl` files which are the training and testing datasets.
-First, set the dataset directory in the `imdbReviews.py`, then run the code.
-```bash
-python imdbReviews.py
-```
+3. `WebsiteChecker`: This class verifies if a website is up and running based on its status code.
 
-You will get two `*.pkl` files which are needed for `naive.py` and `svm.py`.
-To do prediction, run the following command.
-```bash
-python naive.py
-```
+## Prerequisites
 
-## screenshots
-![L1_1](https://github.com/changhuixu/sentiment-analysis-using-python/blob/master/naive/naive-demo-screenshot.png "Naive Bayes code")
+- Python 3.x
+- Microsoft Edge WebDriver (msedgedriver.exe) for Selenium (Ensure the driver version matches your Microsoft Edge browser version)
 
+## Installation
 
-![L1_2](https://github.com/changhuixu/sentiment-analysis-using-python/blob/master/svm/svm-demo-screenshot.png "SVM code")
-### End
-last modified 04/16/2016
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your_username/sharepoint-link-checker.git
+
+sharepoint_url = "https://lloydsbanking.sharepoint.com/sites/interactiveprojects/Shared%20Documents/Consumable/consumable.aspx"
+msedge_driver_path = "msedgedriver.exe"  # Provide the path to the Microsoft Edge WebDriver executable
+
+2. Run the main script
+   python main.py
+Classes
+SharePointLinkChecker
+
+This class checks SharePoint links and extracts URLs from button elements. It utilizes Selenium to interact with the SharePoint page and retrieve the URLs.
+OutlookEmailSender
+
+This class sends an email via Outlook with the given body. It uses the win32com library to interact with Outlook and send the email.
+WebsiteChecker
+
+This class verifies if a website is up and running based on its status code. It uses the requests library to send HTTP requests and obtain status codes.
