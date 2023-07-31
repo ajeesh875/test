@@ -1,6 +1,6 @@
 # SharePoint Link Checker and Outlook Email Sender
 
-This Python project provides a solution to check SharePoint links and send the results through an Outlook email. It is implemented using object-oriented programming (OOP) and includes three classes:
+This Python project provides a solution to check SharePoint links and send the results through an Outlook email. 
 
 1. `SharePointLinkChecker`: This class checks SharePoint links and extracts URLs from button elements.
 
