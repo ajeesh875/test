@@ -35,3 +35,5 @@ This class sends an email via Outlook with the given body. It uses the win32com 
 WebsiteChecker
 
 This class verifies if a website is up and running based on its status code. It uses the requests library to send HTTP requests and obtain status codes.
+
+
