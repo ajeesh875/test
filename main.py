@@ -10,7 +10,6 @@ def check_url_status(urls, driver):
         status_codes.append(str(driver.execute_script("return window.performance.getEntries()[6].responsestatus")))
     return status_codes
 
-
 if __name__ == "__main__":
     sharepoint_url = "https://lloydsbanking.sharepoint.com/sites/interactiveprojects/Shared%20Documents/Consumable/consumable.aspx"
     msedge_driver_path = "msedgedriver.exe"  # Provide the path to the Microsoft Edge WebDriver executable
