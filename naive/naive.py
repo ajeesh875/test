@@ -30,6 +30,7 @@ nb.fit(train_features, [int(r) for r in reviews[1]])
 # Now we can use the model to predict classifications for our test features.
 predictions = nb.predict(test_features)
 
+
 # Compute the error.  
 print(metrics.classification_report(test[1], predictions))
 print("accuracy: {0}".format(metrics.accuracy_score(test[1], predictions)))
