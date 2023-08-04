@@ -20,6 +20,7 @@ vectorizer = CountVectorizer()
 train_features = vectorizer.fit_transform([r for r in reviews[0]])
 test_features = vectorizer.transform([r for r in test[0]])
 
+
 # Fit a naive bayes model to the training data.
 # This will train the model using the word counts we computer, 
 #       and the existing classifications in the training set.
